@@ -183,7 +183,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-06-22 02:30:11 / 修改時間：02:34:04" itemprop="dateCreated datePublished" datetime="2020-06-22T02:30:11+08:00">2020-06-22</time>
+              <time title="創建時間：2020-06-22 02:30:11 / 修改時間：03:07:31" itemprop="dateCreated datePublished" datetime="2020-06-22T02:30:11+08:00">2020-06-22</time>
             </span>
 
           
@@ -199,24 +199,14 @@
       
           <h1 id="Hexo-with-Github-page"><a href="#Hexo-with-Github-page" class="headerlink" title="Hexo with Github page"></a>Hexo with Github page</h1><h2 id="Step-1-建立github-專案"><a href="#Step-1-建立github-專案" class="headerlink" title="Step 1 建立github 專案"></a><font color = "#f60">Step 1 建立github 專案</font></h2><h3 id="Start-a-Project"><a href="#Start-a-Project" class="headerlink" title="Start a Project"></a>Start a Project</h3><p><img src="https://i.imgur.com/AEJuNPN.png" alt=""></p>
 <h3 id="Fill-the-Repository"><a href="#Fill-the-Repository" class="headerlink" title="Fill the Repository"></a>Fill the Repository</h3><p>填入自己的username會使你的網址成為<a href="https://username.github.io" target="_blank" rel="noopener">https://username.github.io</a></p>
-<!-- read more -->
-<p>這裡的username 指的是你的Github 帳號<br><img src="https://i.imgur.com/mmNnH0F.png" alt=""></p>
-<h2 id="Step-2-在本地安裝-Node-js-npm-n套件"><a href="#Step-2-在本地安裝-Node-js-npm-n套件" class="headerlink" title="Step 2 在本地安裝 Node.js /npm/ n套件"></a><font color = "#f60">Step 2 在本地安裝 Node.js /npm/ n套件</font></h2><h3 id="安裝-Node-js"><a href="#安裝-Node-js" class="headerlink" title="安裝 Node.js"></a>安裝 Node.js</h3><figure class="highlight plain"><figcaption><span>apt install node.js```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">### 安裝 版本控制 n </span><br><span class="line">&#96;&#96;&#96; npm install -g n &#96;&#96;&#96; 全域安裝</span><br><span class="line">&#96;&#96;&#96; n lastest &#96;&#96;&#96; 使用n安裝最新版本的 node.js </span><br><span class="line">## &lt;font color &#x3D; &quot;#f60&quot;&gt;Step 3 安裝 Hexo &#x2F; Hexo Git &lt;&#x2F;font&gt;</span><br><span class="line">### 安裝 Hexo Git 才能將網站部屬到Github Page</span><br><span class="line">&#96;&#96;&#96;npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h3 id="安裝-Hexo"><a href="#安裝-Hexo" class="headerlink" title="安裝 Hexo"></a>安裝 Hexo</h3><figure class="highlight plain"><figcaption><span>install -g hexo-cli ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">### Hexo init 網誌名字 ---&gt;新增網誌</span><br><span class="line"></span><br><span class="line">## &lt;font color &#x3D; &quot;#f60&quot;&gt;Step 4 修改 Hexo 配置文件 _config.yml&lt;&#x2F;font&gt;</span><br><span class="line">![](https:&#x2F;&#x2F;i.imgur.com&#x2F;cK6yFR3.jpg)</span><br><span class="line">* title : 網站的標題(名稱)</span><br><span class="line">* subtitle : 副標題</span><br><span class="line">* keywords : 可以之後加入標籤等等</span><br><span class="line">* author : 作者名</span><br><span class="line">* language : 這裡可以設定想要的語言</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.imgur.com/Qr9VqdS.jpg" alt=""></p>
-<p>在網站設定檔最下方的repo 加入部屬的目的地</p>
-<h2 id="Step-5-Hexo-clean-Hexo-generate-Hexo-deploy"><a href="#Step-5-Hexo-clean-Hexo-generate-Hexo-deploy" class="headerlink" title=" Step 5  Hexo clean / Hexo generate / Hexo deploy "></a><font color = "#f60"> Step 5  Hexo clean / Hexo generate / Hexo deploy </font></h2><ul>
-<li>清除先前的檔案<code>hexo clean</code>或是 <code>hexo cl</code></li>
-<li>建立檔案 <code>hexo generate</code> 或是 <code>hexo g</code></li>
-<li>部屬到Github Page <code>hexo deploy</code> 或是 <code>hexo d</code></li>
-</ul>
-<h2 id="Step-6-換主題-以-NexT-為例"><a href="#Step-6-換主題-以-NexT-為例" class="headerlink" title="Step 6 換主題 以 NexT 為例"></a><font color = "#f60">Step 6 換主題 以 NexT 為例</font></h2><h3 id="首先要有-git-工具"><a href="#首先要有-git-工具" class="headerlink" title="首先要有 git 工具"></a>首先要有 git 工具</h3><ol>
-<li>找到喜歡的主題後進入github 的公開相關程式碼</li>
-<li><code>git clone 檔案網址</code> 到網誌下的themes裡開心資料夾儲存</li>
-<li>到 Hexo 配置文件下 將 theme : 修改成新主題的資料夾名<br><img src="https://i.imgur.com/Ddhxwv5.jpg" alt=""></li>
-</ol>
-<h2 id="參考連結"><a href="#參考連結" class="headerlink" title="參考連結 "></a><font color = "#f60">參考連結 </font></h2><h3 id="Hexo博客优化之Next主题美化"><a href="#Hexo博客优化之Next主题美化" class="headerlink" title="Hexo博客优化之Next主题美化"></a><a href="https://vic.kim/2019/05/25/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8BNext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" target="_blank" rel="noopener">Hexo博客优化之Next主题美化</a></h3><h3 id="教學-我的第一篇-Hexo-文章：使用-hexo-admin-後台管理工具"><a href="#教學-我的第一篇-Hexo-文章：使用-hexo-admin-後台管理工具" class="headerlink" title="[教學] 我的第一篇 Hexo 文章：使用 hexo-admin 後台管理工具"></a><a href="https://ed521.github.io/2019/08/hexo-admin/" target="_blank" rel="noopener">[教學] 我的第一篇 Hexo 文章：使用 hexo-admin 後台管理工具</a></h3><h3 id="Hexo-簡略教學"><a href="#Hexo-簡略教學" class="headerlink" title="Hexo 簡略教學"></a><a href="https://meteorv.dev/hexo/hexo/" target="_blank" rel="noopener">Hexo 簡略教學</a></h3><h3 id="Hexo博客设置以及Next主题美化"><a href="#Hexo博客设置以及Next主题美化" class="headerlink" title="Hexo博客设置以及Next主题美化"></a><a href="http://jeffyang.top/Hexo/Hexo%E4%B8%BB%E9%A2%98Next%E7%BE%8E%E5%8C%96/" target="_blank" rel="noopener">Hexo博客设置以及Next主题美化</a></h3><h3 id="如何搭建個人-Blog-使用-Hexo-Gitpage"><a href="#如何搭建個人-Blog-使用-Hexo-Gitpage" class="headerlink" title="如何搭建個人 Blog 使用 Hexo + Gitpage"></a><a href="https://medium.com/@bebebobohaha/%E4%BD%BF%E7%94%A8-hexo-gitpage-%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA-blog-5c6ed52f23db" target="_blank" rel="noopener">如何搭建個人 Blog 使用 Hexo + Gitpage</a></h3><h3 id="Hexo-GitHub，新手也可以快速建立部落格"><a href="#Hexo-GitHub，新手也可以快速建立部落格" class="headerlink" title="Hexo+GitHub，新手也可以快速建立部落格"></a><a href="https://blackmaple.me/hexo-tutorial/" target="_blank" rel="noopener">Hexo+GitHub，新手也可以快速建立部落格</a></h3><h3 id="https-hackmd-io-king87515-Sy16ckymU"><a href="#https-hackmd-io-king87515-Sy16ckymU" class="headerlink" title="https://hackmd.io/@king87515/Sy16ckymU"></a><a href="https://hackmd.io/@king87515/Sy16ckymU" target="_blank" rel="noopener">https://hackmd.io/@king87515/Sy16ckymU</a></h3><h3 id="Node版本管理的最佳工具-n"><a href="#Node版本管理的最佳工具-n" class="headerlink" title="Node版本管理的最佳工具-n"></a><a href="https://medium.com/%E4%BC%81%E9%B5%9D%E4%B9%9F%E6%87%82%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/node%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E6%9C%80%E4%BD%B3%E5%B7%A5%E5%85%B7-n-52f90b6bc91f" target="_blank" rel="noopener">Node版本管理的最佳工具-n</a></h3><h3 id="第一次架設Hexo網站"><a href="#第一次架設Hexo網站" class="headerlink" title="第一次架設Hexo網站"></a><a href="https://medium.com/@z0935323866/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9E%B6%E8%A8%ADhexo%E7%B6%B2%E7%AB%99-7074161158f8" target="_blank" rel="noopener">第一次架設Hexo網站</a></h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/06/22/Hexo%20with%20Github%20page/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
