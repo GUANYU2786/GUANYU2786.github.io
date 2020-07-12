@@ -188,7 +188,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-07-13 00:00:00 / 修改時間：00:49:23" itemprop="dateCreated datePublished" datetime="2020-07-13T00:00:00+08:00">2020-07-13</time>
+              <time title="創建時間：2020-07-13 00:00:00 / 修改時間：00:54:19" itemprop="dateCreated datePublished" datetime="2020-07-13T00:00:00+08:00">2020-07-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,41 +220,20 @@
 
       
           <h1 id="Hexo-的-NexT-教學"><a href="#Hexo-的-NexT-教學" class="headerlink" title="Hexo 的 NexT 教學"></a>Hexo 的 NexT 教學</h1><p>更換頭像、新增自介(about)、標籤(tags)與分類(categories) </p>
-<ul>
-<li><h2 id="更換頭像"><a href="#更換頭像" class="headerlink" title="更換頭像"></a>更換頭像</h2>  在<code>themes/NexT/_config.yml</code>裡找到頭像路徑<br>  <img src="https://i.imgur.com/wzBBgiK.jpg" alt=""><br>  可以直接更改圖片或是更改路徑指到圖片位置</li>
-<li><h2 id="新增自我介紹-about"><a href="#新增自我介紹-about" class="headerlink" title="新增自我介紹( about )"></a>新增自我介紹( about )</h2><ol>
-<li>進入 blog 下的 NexT設定檔開啟需要的功能 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim blog/themes/NexT/_config.yml</span><br></pre></td></tr></table></figure>
- <img src="https://i.imgur.com/iuA0vd8.jpg" alt=""><br> 找到 Menu 去掉註解( # )來開啟想要的功能<!-- readmore --></li>
-<li>新增 about 頁面 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">	 hexo <span class="keyword">new</span> page about</span><br><span class="line">	``` </span><br><span class="line">        blog/source/ 下就會多一個 about 的資料夾</span><br><span class="line">    <span class="number">3.</span> 更改 about/index.md 新增想要的內容</span><br><span class="line">    </span><br><span class="line">* ## 新增標籤( tags )</span><br><span class="line">    <span class="number">1.</span> 新增 標籤頁面</span><br><span class="line">        ```c</span><br><span class="line">	 hexo <span class="keyword">new</span> page tags </span><br><span class="line">	``` </span><br><span class="line">    <span class="number">2.</span> 進入新增的 tags/index.md 修改</span><br><span class="line">        ![](https:<span class="comment">//i.imgur.com/BBUPCWk.jpg)</span></span><br><span class="line">        在第三行增加 type: <span class="string">"tags"</span> </span><br><span class="line">        </span><br><span class="line">* ## 新增分類( categories )</span><br><span class="line">    <span class="number">1.</span> 新增 分類頁面</span><br><span class="line">        ```c</span><br><span class="line">	 hexo <span class="keyword">new</span> page categories </span><br><span class="line">	``` </span><br><span class="line">    <span class="number">2.</span> 進入新增的 categories/index.md  修改</span><br><span class="line">        ![](https:<span class="comment">//i.imgur.com/ZzDARf8.jpg)</span></span><br><span class="line"></span><br><span class="line">        在第三行增加 type: <span class="string">"categories"</span>  </span><br><span class="line">* ## 使用標籤及分類</span><br><span class="line">    正常的一篇文檔案開頭都會是</span><br><span class="line">    ```c </span><br><span class="line">        ---</span><br><span class="line">        title: </span><br><span class="line">        date: </span><br><span class="line">        tags: </span><br><span class="line">        categories: </span><br><span class="line">        ---</span><br></pre></td></tr></table></figure>
-在 tags: 和 categories: 新增標籤及分類例如<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: helloworld </span><br><span class="line">date: <span class="number">2020</span><span class="number">-07</span><span class="number">-22</span> <span class="number">17</span>:<span class="number">17</span>:<span class="number">09</span></span><br><span class="line">tags: </span><br><span class="line">    - pease </span><br><span class="line">categories:</span><br><span class="line">    - Dad <span class="keyword">and</span> Mom </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-如有多個標籤可以往下新增<br><font color = #ff00 >但分類則是有層級的比如</font><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: helloworld </span><br><span class="line">date: <span class="number">2020</span><span class="number">-07</span><span class="number">-22</span> <span class="number">17</span>:<span class="number">17</span>:<span class="number">09</span></span><br><span class="line">tags: </span><br><span class="line">    - Peace </span><br><span class="line">    - Love </span><br><span class="line">categories:</span><br><span class="line">    - Dad <span class="keyword">and</span> Mom </span><br><span class="line">    - Peter <span class="keyword">and</span> Mike</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<font color = #ff00>Peter and Mike 會是 Dad and Mom下的子分類</font><h2 id="參考連結"><a href="#參考連結" class="headerlink" title="參考連結"></a>參考連結</h2></li>
-</ol>
-</li>
-<li><a href="https://www.jianshu.com/p/f138032e7539" target="_blank" rel="noopener">Hexo next 主题配置右侧栏的分类和标签打开的是空白</a></li>
-<li><a href="https://yogapan.github.io/2017/08/11/%E7%94%A8Hexo-Github-Pages%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA%E9%83%A8%E8%90%BD%E6%A0%BC/" target="_blank" rel="noopener">用Hexo + Github Pages搭建個人部落格</a></li>
-</ul>
-<!-- 
-```在souce 裡新增 page about```
-新增 標籤
-如此即可在菜单栏里的「tags」「categories」看见相应的效果。但是实际上打开是空白页面 本文的重点来了。
-小tips：每次的手输入 categories 我们可以在D:\blog\scaffolds\post.md 添加如下代码，这样每次新建文章，就自动有了。
-
-
----
-title: Hexo 的 NexT 教學
-<p>date: 1594569600000<br>tags:           #新加<br>categories:     #新加</p>
-<hr>
-<p>作者：学贤社<br>链接：<a href="https://www.jianshu.com/p/f138032e7539" target="_blank" rel="noopener">https://www.jianshu.com/p/f138032e7539</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。<br>3. Hexo next 主题配置右侧栏的分类和标签打开的是空白<br>先前 categorier 文件夹（D:\blog\source\categories），里面的 index.md 文件打开，修改（即添加一行）为：</p>
-<hr>
-<p>title: categories<br>date: 2018-01-23 17:14:51<br>type: “categories”   #新添加的</p>
-<hr>
-<p>同理，「标签」</p>
-<hr>
-<p>title: tags<br>date: 2018-01-23 17:14:51<br>type: “tags”     #新添加的</p>
-<hr>
-<p>作者：学贤社<br>链接：<a href="https://www.jianshu.com/p/f138032e7539" target="_blank" rel="noopener">https://www.jianshu.com/p/f138032e7539</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。–&gt;</p>
-
+<h2 id="更換頭像"><a href="#更換頭像" class="headerlink" title="更換頭像"></a>更換頭像</h2><pre><code>在``` themes/NexT/_config.yml ```裡找到頭像路徑
+![](https://i.imgur.com/wzBBgiK.jpg)
+可以直接更改圖片或是更改路徑指到圖片位置</code></pre><h2 id="新增自我介紹-about"><a href="#新增自我介紹-about" class="headerlink" title="新增自我介紹( about )"></a>新增自我介紹( about )</h2><pre><code>1. 進入 blog 下的 NexT設定檔開啟需要的功能
+    <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim blog/themes/NexT/_config.yml</span><br></pre></td></tr></table></figure>
+    ![](https://i.imgur.com/iuA0vd8.jpg)
+    找到 Menu 去掉註解( # )來開啟想要的功能</code></pre>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/13/Hexo%20%E7%9A%84%20NexT%20%E6%95%99%E5%AD%B8/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
